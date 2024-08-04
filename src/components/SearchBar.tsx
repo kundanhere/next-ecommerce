@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const SearchBar = () => {
   const router = useRouter();
@@ -10,7 +10,7 @@ const SearchBar = () => {
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const searchTerm = formData.get('search') as string;
+    const searchTerm = formData.get("search") as string;
     // navigate to the search term field
     if (searchTerm) {
       router.push(`/list?name=${searchTerm}`);
