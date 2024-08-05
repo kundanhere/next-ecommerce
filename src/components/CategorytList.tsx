@@ -10,13 +10,13 @@ const CategorytList = () => {
           href="/list?cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-          <div className="relative bg-slate-100 w-full h-96">
+          <div className="relative bg-slate-100 w-full h-96 rounded-md">
             <Image
               src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               fill
               sizes="20vw"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
           <h1 className="mt-4 font-light text-xl tracking-wide">
@@ -28,13 +28,13 @@ const CategorytList = () => {
           href="/list?cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-          <div className="relative bg-slate-100 w-full h-96">
+          <div className="relative bg-slate-100 w-full h-96 rounded-md">
             <Image
               src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               fill
               sizes="20vw"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
           <h1 className="mt-4 font-light text-xl tracking-wide">
@@ -45,13 +45,13 @@ const CategorytList = () => {
           href="/list?cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-          <div className="relative bg-slate-100 w-full h-96">
+          <div className="relative bg-slate-100 w-full h-96 rounded-md">
             <Image
               src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               fill
               sizes="20vw"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
           <h1 className="mt-4 font-light text-xl tracking-wide">
@@ -62,13 +62,13 @@ const CategorytList = () => {
           href="/list?cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-          <div className="relative bg-slate-100 w-full h-96">
+          <div className="relative bg-slate-100 w-full h-96 rounded-md">
             <Image
               src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               fill
               sizes="20vw"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
           <h1 className="mt-4 font-light text-xl tracking-wide">
@@ -79,13 +79,13 @@ const CategorytList = () => {
           href="/list?cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-          <div className="relative bg-slate-100 w-full h-96">
+          <div className="relative bg-slate-100 w-full h-96 rounded-md">
             <Image
               src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               fill
               sizes="20vw"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
           <h1 className="mt-4 font-light text-xl tracking-wide">
@@ -96,13 +96,13 @@ const CategorytList = () => {
           href="/list?cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-          <div className="relative bg-slate-100 w-full h-96">
+          <div className="relative bg-slate-100 w-full h-96 rounded-md">
             <Image
               src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               fill
               sizes="20vw"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
           <h1 className="mt-4 font-light text-xl tracking-wide">
@@ -113,13 +113,13 @@ const CategorytList = () => {
           href="/list?cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-          <div className="relative bg-slate-100 w-full h-96">
+          <div className="relative bg-slate-100 w-full h-96 rounded-md">
             <Image
               src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               fill
               sizes="20vw"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
           <h1 className="mt-4 font-light text-xl tracking-wide">
@@ -130,13 +130,13 @@ const CategorytList = () => {
           href="/list?cat=test"
           className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 xl:w-1/6"
         >
-          <div className="relative bg-slate-100 w-full h-96">
+          <div className="relative bg-slate-100 w-full h-96 rounded-md">
             <Image
               src="https://images.pexels.com/photos/4041391/pexels-photo-4041391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
               fill
               sizes="20vw"
-              className="object-cover"
+              className="object-cover rounded-md"
             />
           </div>
           <h1 className="mt-4 font-light text-xl tracking-wide">

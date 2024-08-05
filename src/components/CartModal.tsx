@@ -83,7 +83,7 @@ const CartModal = () => {
               <button className="rounded-md py-3 px-4 ring-1 ring-gray-300">
                 View Cart
               </button>
-              <button className="rounded-md py-3 px-4 bg-zinc-950 text-white">
+              <button className="rounded-md py-3 px-4 bg-brinkpink text-white hover:bg-zinc-950 transition-all ease-in-out duration-300">
                 Checkout
               </button>
             </div>

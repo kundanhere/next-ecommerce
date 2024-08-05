@@ -79,9 +79,11 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Email address"
-              className="p-4 w-3/4"
+              className="p-4 w-3/4 rounded-s-md outline-none"
             />
-            <button className="w-1/4 bg-brinkpink text-white">JOIN</button>
+            <button className="w-1/4 rounded-e-md bg-brinkpink text-white hover:bg-zinc-950 transition-all ease-in-out duration-300">
+              JOIN
+            </button>
           </div>
           {/* payment options */}
           <span className="font-semibold">Secure Payments</span>
