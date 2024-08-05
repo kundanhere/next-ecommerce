@@ -13,7 +13,7 @@ const NavIcons = () => {
   const router = useRouter();
 
   // TEMPORARY
-  const isLoggedIn = false;
+  const isLoggedIn = true;
   const handleProfileClick = () => {
     if (!isLoggedIn) {
       router.push("/login");
@@ -32,7 +32,7 @@ const NavIcons = () => {
         onClick={handleProfileClick}
       />
       {isProfileOopen && (
-        <div className="absolute top-12 left-0 p-4 text-sm rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20">
+        <div className="absolute top-12 left-0 p-4 text-sm rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-20 bg-white">
           <Link href="/">Profile</Link>
           <div className="mt-2 cursor-pointer">Logout</div>
         </div>
