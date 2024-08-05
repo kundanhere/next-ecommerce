@@ -29,7 +29,7 @@ const CartModal = () => {
                   {/* TITLE */}
                   <div className="flex items-center justify-between gap-8">
                     <h3 className="font-semibold">Set of Cosmetic</h3>
-                    <div className="p-1 bg-gray-50 rounded-sm">$29</div>
+                    <div className="p-1 bg-gray-50 rounded-sm">$12</div>
                   </div>
                   {/* DESC */}
                   <div className="text-sm text-gray-500">available</div>
@@ -37,7 +37,7 @@ const CartModal = () => {
                 {/* BOTTOM */}
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">Qty. 1</span>
-                  <span className="text-blue-500">Remove</span>
+                  <span className="text-brinkpink">Remove</span>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ const CartModal = () => {
                   {/* TITLE */}
                   <div className="flex items-center justify-between gap-8">
                     <h3 className="font-semibold">Cosmetic Bottle</h3>
-                    <div className="p-1 bg-gray-50 rounded-sm">$49</div>
+                    <div className="p-1 bg-gray-50 rounded-sm">$9</div>
                   </div>
                   {/* DESC */}
                   <div className="text-sm text-gray-500">available</div>
@@ -65,7 +65,7 @@ const CartModal = () => {
                 {/* BOTTOM */}
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">Qty. 2</span>
-                  <span className="text-blue-500">Remove</span>
+                  <span className="text-brinkpink">Remove</span>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ const CartModal = () => {
           <div className="">
             <div className="flex items-center justify-between font-semibold">
               <span className="">Subtotal</span>
-              <span className="">$78</span>
+              <span className="">$30</span>
             </div>
             <p className="text-gray-500 text-sm mt-2 mb-4">
               Shipping and taxes calculated at checkout.
