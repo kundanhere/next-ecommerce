@@ -77,6 +77,7 @@ const Footer = () => {
           </p>
           <div className="flex">
             <input
+              name="email_subscribe"
               type="text"
               placeholder="Email address"
               className="p-4 w-3/4 rounded-s-md outline-none"

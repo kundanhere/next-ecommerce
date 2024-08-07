@@ -50,7 +50,7 @@ const Filter = () => {
           <option value="">Popular</option>
         </select>
         <select
-          name=""
+          name="all"
           id=""
           className="py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
         >
@@ -59,7 +59,7 @@ const Filter = () => {
       </div>
       <div className="">
         <select
-          name=""
+          name="sort"
           id=""
           className="py-2 px-4 rounded-2xl text-xs font-medium bg-[#EBEDED]"
         >

@@ -16,7 +16,13 @@ const ListPage = () => {
           </button>
         </div>
         <div className="relative w-1/2">
-          <Image src="/woman.png" alt="" fill className="object-contain" />
+          <Image
+            src="/woman.png"
+            alt=""
+            fill
+            sizes="30vw"
+            className="object-contain"
+          />
         </div>
       </div>
       {/* FILETR */}
