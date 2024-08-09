@@ -2,14 +2,22 @@
 
 import { useState } from "react";
 
-const Add = () => {
+const Add = ({
+  productId,
+  variantId,
+  stockNumber,
+}: {
+  productId: string;
+  variantId: string;
+  stockNumber: number;
+}) => {
   const [quantity, setQuantity] = useState(1);
   const MAX_STOCK = 4; // Replace with actual max stock quantity
 
   const handleQuantity = (type: "inc" | "dec") => {
     if (type === "dec" && quantity > 1) {
       setQuantity((prev) => prev - 1);
-    } else if (type === "inc" && quantity < MAX_STOCK) {
+    } else if (type === "inc" && quantity < stockNumber) {
       setQuantity((prev) => prev + 1);
     }
   };
@@ -19,23 +27,23 @@ const Add = () => {
       <h4 className="font-medium">Choose a Qty.</h4>
       <div className="flex justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-32 bg-gray-100 py-2 px-4 rounded-3xl flex items-center justify-between">
+          <div className="w-32 bg-gray-100  rounded-3xl flex items-center justify-between">
             <button
-              className={`${quantity <= 1 ? "text-gray-300 cursor-not-allowed" : ""} text-xl cursor-pointer`}
+              className={`${quantity <= 1 ? "text-gray-300 cursor-not-allowed" : "cursor-pointer hover:bg-gray-200"} text-xl w-1/3 p-2 rounded-full`}
               onClick={() => handleQuantity("dec")}
             >
               -
             </button>
             {quantity}
             <button
-              className={`${quantity === MAX_STOCK ? "text-gray-300 cursor-not-allowed" : ""} text-xl cursor-pointer`}
+              className={`${quantity === stockNumber ? "text-gray-300 cursor-not-allowed" : "cursor-pointer hover:bg-gray-200"} text-xl w-1/3 p-2 rounded-full`}
               onClick={() => handleQuantity("inc")}
             >
               +
             </button>
           </div>
           <div className="text-xs">
-            Only <span className="text-orange-500">{MAX_STOCK} items</span>{" "}
+            Only <span className="text-orange-500">{stockNumber} items</span>{" "}
             left! <br /> {"Don't"} miss it
           </div>
         </div>
