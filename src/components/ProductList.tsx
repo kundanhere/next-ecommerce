@@ -9,9 +9,11 @@ const MAX_PRODUCT_PER_PAGE = 20;
 const ProductList = async ({
   categoryId,
   limit,
+  searchParams,
 }: {
   categoryId: string;
-  limit: number;
+  limit?: number;
+  searchParams?: any;
 }) => {
   const wixClient = await wixClientServer();
   const response = await wixClient.products
@@ -21,7 +23,7 @@ const ProductList = async ({
     .find();
 
   return (
-    <div className="mt-12 flex flex-wrap justify-between gap-x-8 gap-y-16">
+    <div className="mt-12 flex flex-wrap gap-x-8 gap-y-16">
       {response.items.map((product: products.Product) => (
         <Link
           key={product._id}
