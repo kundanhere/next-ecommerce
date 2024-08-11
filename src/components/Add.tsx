@@ -42,10 +42,16 @@ const Add = ({
               +
             </button>
           </div>
-          <div className="text-xs">
-            Only <span className="text-orange-500">{stockNumber} items</span>{" "}
-            left! <br /> {"Don't"} miss it
-          </div>
+          {stockNumber < 1 ? (
+            <div className="text-xs text-orange-500">
+              Product is out of stock
+            </div>
+          ) : (
+            <div className="text-xs">
+              Only <span className="text-orange-500">{stockNumber} items</span>{" "}
+              left! <br /> {"Don't"} miss it
+            </div>
+          )}
         </div>
         <button className="w-max rounded-3xl ring-1 ring-brinkpink text-brinkpink py-2 px-4 text-xs hover:bg-brinkpink hover:text-white transition-all ease-in-out duration-300 disabled:bg-pink-200 disabled:text-white disabled:ring-none disabled:cursor-not-allowed">
           Add to cart
