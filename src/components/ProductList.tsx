@@ -16,12 +16,39 @@ const ProductList = async ({
   searchParams?: any;
 }) => {
   const wixClient = await wixClientServer();
-  const response = await wixClient.products
-    .queryProducts()
-    .eq("collectionIds", categoryId)
-    .limit(limit || MAX_PRODUCT_PER_PAGE)
-    .find();
 
+  // product query parameters
+  const productQuery = wixClient.products
+    .queryProducts()
+    .startsWith("name", searchParams?.name || "")
+    .eq("collectionIds", categoryId)
+    .hasSome(
+      "productType",
+      searchParams?.type ? [searchParams.type] : ["physical", "digital"],
+    )
+    .gt("priceData.price", searchParams?.min || 0)
+    .lt("priceData.price", searchParams?.max || 999999)
+    .limit(limit || MAX_PRODUCT_PER_PAGE);
+
+  // Filtering by product sort parameter if provided.
+  if (searchParams?.sort) {
+    const [sortType, sortBy] = searchParams.sort.split("-");
+
+    // Sorting based on the provided sort parameter.
+    switch (sortType) {
+      case "asc":
+        productQuery.ascending(sortBy);
+        break;
+
+      case "desc":
+        productQuery.descending(sortBy);
+        break;
+    }
+  }
+  // Fetching the products based on the query parameters.
+  const response = await productQuery.find();
+
+  // Returning the filtered and sorted products.
   return (
     <div className="mt-12 flex flex-wrap gap-x-8 gap-y-16">
       {response.items.map((product: products.Product) => (

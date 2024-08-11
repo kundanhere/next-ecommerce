@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         brinkpink: "#F35C7A",
+        brightGray: "#EBEDED",
       },
     },
   },
